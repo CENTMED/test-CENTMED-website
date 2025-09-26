@@ -54,7 +54,7 @@ const newsItems = [
         title: "-",
         subtitle: "_",
         date: "M D, 2025",
-        image: ,//add
+        //image: ,//add
         link: "-",
         excerpt: "-",
         category: "?"
