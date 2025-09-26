@@ -48,16 +48,6 @@ const newsItems = [
         link: "https://www.linkedin.com/feed/update/urn:li:activity:7345804567206322177",
         excerpt: "As part of Health & Well-being Week at Expo 2025 Osaka, the UAE Pavilion hosted NYUAD’s CENTMED for a showcase of next-generation medical technologies. The event featured innovations in wearable diagnostics and smart surgical tools, sparking meaningful dialogue on expanding access to healthcare through purpose-driven innovation.",
         category: "Global Outreach"
-    },
-    {
-        id: 5,
-        title: "-",
-        subtitle: "_",
-        date: "M D, 2025",
-        //image: ,//add
-        link: "-",
-        excerpt: "-",
-        category: "?"
     }
 ];
 
