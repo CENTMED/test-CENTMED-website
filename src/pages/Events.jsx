@@ -32,6 +32,14 @@ const eventData = [
         university: "KAUST, Saudi Arabia",
         image: QiaoquiangGanImage,
     },
+    {
+        category: "TEST! CENTMED Seminar Series",
+        title: "A ..",
+        speaker: "me",
+        date: "Oct 4th, 2025",
+        university: "NYUAD, Abu Dhabi",
+        image: QiaoquiangGanImage,
+    },
 ];
 
 const Events = () => {
