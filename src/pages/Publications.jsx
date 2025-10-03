@@ -25,6 +25,13 @@ const Publications = () => {
                 year: 2025,
                 doi: "https://doi.org/10.1002/admi.202401018",
             },
+            {
+                title: "Passive intestinal microbiome sampling using an ingestible device with tortuous lattices.",
+                authors: "Hanan Mohammed, Sadaf Usmani, Brij Bhushan, Anique Ahmad, Oraib Al-Ketan, Ahmed A. Shibl, Maylis Boitet, Devjoy Dev, Heba Naser, Aashish R. Jha, Khalil B. Ramadi",
+                journal: "Cell Press",
+                year: 2025,
+                doi: "https://doi.org/10.1016/j.device.2025.100904",
+            },
         ],
         conference: [
             {
