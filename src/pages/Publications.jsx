@@ -19,14 +19,14 @@ const Publications = () => {
                 doi: "https://doi.org/10.1016/j.device.2025.100904",
             },
             {
-                title: "Investigating the Mechanism of Ion Concentration Polarization within Nanofluidic Hydrogel Membranes: Experiment and Simulation",
+                title: "Investigating the mechanism of ion concentration polarization within nanofluidic hydrogel membranes: experiment and simulation",
                 authors: "Hiba Aljayyousi, Jongmin Kim, Serdal Kirmizialtin, and Yong-Ak Song",
                 journal: "Advanced Materials Interfaces",
                 year: 2025,
                 doi: "https://doi.org/10.1002/admi.202401018",
             },
             {
-                title: "Wirelessly Powered Ingestible Capsule for Optical Stimulation of the Gastrointestinal Tract in Rodents",
+                title: "Wirelessly powered ingestible capsule for optical stimulation of the gastrointestinal tract in rodents",
                 authors: "Mohamed Elsherif, Rawan Badr El-Din, Zhansaya Makhambetova, Heba Naser, Maylis Boitet, Rahul Singh, Keonghwan Oh, Revathi Sukesan, Sohmyung Ha, and Khalil B. Ramadi",
                 journal: "Advanced Material Technologies",
                 year: 2025,
@@ -40,21 +40,21 @@ const Publications = () => {
                 doi: "https://doi.org/10.1038/s41598-025-13654-4",
             },
             {
-                title: "A Modular and Reconfigurable Microfluidic Device for Culturing Spheroids Under Continuous Perfusion",
+                title: "A modular and reconfigurable microfluidic device for culturing spheroids under continuous perfusion",
                 authors: "Hiba Aljayyousi, Sarah Sahloul, Ajymurat Orozaliev, Navajit Baban, Duc-Anh Van, Amani Al Nuairi, Pauline John, Azhar Zam, Piergiorgio Percipalle, and Yong-Ak Song",
                 journal: "APL Bioengineering ",
                 year: 2025,
                 doi: "https://doi.org/10.1063/5.0262536 ",
             },
             {
-                title: "MechanoBioCAD: A Generalized Semi-Automated Computational Tool for Mechanobiological Studies",
+                title: "MechanoBioCAD: a generalized semi-automated computational tool for mechanobiological studies",
                 authors: "N. Baban, C. Stubbs, Y.-A. Song",
                 journal: "Lab on a Chip",
                 year: 2025,
                 doi: "https://doi.org/10.1039/D4LC00843J",
             },
             {
-                title: "Investigating the Mechanism of Ion Concentration Polarization within Nanofluidic Hydrogel Membranes: Experiment and Simulation",
+                title: "Investigating the mechanism of ion concentration polarization within nanofluidic hydrogel membranes: experiment and simulation",
                 authors: "H. Aljayyousi, J. Kim, S. Kirmizialtin, Y.-A. Song",
                 journal: "Advanced Materials Interfaces",
                 year: 2025,
@@ -63,7 +63,7 @@ const Publications = () => {
         ],
         conference: [
             {
-                title: "A Modular and Reconfigurable Microfluidic Device for Culturing Spheroids Under Continuous Perfusion",
+                title: "A modular and reconfigurable microfluidic device for culturing spheroids under continuous perfusion",
                 authors: "H. Aljayyousi, S. Sahloul, A. Orozaliev, N. Baban, A. Al Nuairi, P. John, A. Zam, P. Percipalle, Y.-A. Song",
                 conference: "Northeast Bioengineering Conference 2025",
                 date: "April 3-4, 2025",
