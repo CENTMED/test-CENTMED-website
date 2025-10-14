@@ -23,8 +23,8 @@ import WaelOthmanImage from "../assets/WaelOthman_image.jpg";
 import SajinaLalImage from "../assets/SajinaLal_image.png";
 import CarlosAbrilImage from "../assets/CarlosAbril_image.png";
 import JuanBarajasGamboaImage from "../assets/JuanBarajasGamboa_image.png";
-import Andre from "../assets/Andre_image.jpg";
-import Nurbergen_Aitmukhanbetov from "../assets/Nurbergen_Aitmukhanbetov_image.jpg";
+import AndreImage from "../assets/Andre_image.jpg";
+import NurbergenAitmukhanbetovImage from "../assets/Nurbergen_Aitmukhanbetov_image.jpg";
 
 const sections = [
     {
@@ -148,6 +148,18 @@ const sections = [
                 title: "RESEARCH STAFF",
                 description: "Wael Othman earned his Ph.D. in Mechanical Engineering from New York University in 2023. He is currently a Postdoctoral Research Associate in the Advanced Microfluidics and Microdevices Laboratory (AMMLab) at NYU Abu Dhabi. His research centers on developing systems and methods for tactile sensing in minimally invasive surgery. In addition to his research, he serves as the postdoctoral representative on the Engineering IDBEA Committee and as the Engineering Representative on the Postdoctoral Community Steering Committee. Wael’s work has been recognized with prestigious honors, including the Forbes 30 Under 30 and MIT Innovators Under 35 awards.",
                 photo: WaelOthmanImage
+            },
+            {
+                name: "André Fensterseifer Schmidt",
+                title: "RESEARCH STAFF",
+                description: "André is pursuing the opportunity to do translational research on medical technologies as a Post-Doctoral Associate at CENTMED. His current endeavor is to communicate closely with physicians and apply multi-physics modeling expertise to design and develop innovative medical devices — thus bridging engineering solutions and unmet clinical needs.His background includes fatigue testing of stent-grafts, cardiac mechanics simulation, and modeling of endovascular drug delivery from drug-eluting stents and drug-coated balloons. André has earned a B.Eng. in Mechanical Engineering from the Universidade Federal de Santa Catarina, Brazil, followed by a Ph.D. from the University of Glasgow, United Kingdom.",
+                photo: AndreImage
+            },
+            {
+                name: "Nurbergen Aitmukhanbetov",
+                title: "RESEARCH STAFF",
+                description: "Nurbergen Aitmukhanbetov holds a Bachelor of Science in Mechanical Engineering from New York University Abu Dhabi. He specialized in Computational Fluid Dynamics (CFD), Finite Element Modeling (FEM), and fluid-structure interaction (FSI) simulations, and medical device design. His current research focuses on developing a next-generation glaucoma drainage implant, using computational analysis and experimental verifications to improve fluid control and optimize surgical procedures and postoperative outcomes. Nurbergen’s broader interests also include application of robotics, AI, and Machine Learning toward biomedical technologies.",
+                photo: NurbergenAitmukhanbetovImage
             },
         ]
     },
