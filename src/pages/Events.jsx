@@ -6,7 +6,8 @@ import { CalendarDays, Users, University } from "lucide-react";
 import AliAsgarBhagatImage from "../assets/AliAsgarBhagat_image.jpg";
 import SamuelTangImage from "../assets/SamuelTang_image.jpg";
 import QiaoquiangGanImage from "../assets/QiaoqiangGan_image.jpg";
-import DrAdamKhalifa from "../assets/DrAdamKhalifa.jpg";
+import DrAdamKhalifa from "../assets/DrAdamKhalifa.png";
+import ChulKimKAIST from "../assets/ChulKimKAIST.jpg";
 
 const eventData = [
     {
@@ -17,7 +18,14 @@ const eventData = [
         university: "University of Florida",
         image: DrAdamKhalifa,
     },
-    
+    {
+        category: "CENTMED Seminar Series",
+        title: "Miniaturized Implantable/Wearable Systems Enabled by Energy-Efficient Integrated Circuits",
+        speaker: "Chul Kim",
+        date: "Oct 15th, 2025",
+        university: "Korea Advanced Institute of Science and Technology (KAIST)",
+        image: ChulKimKAIST,
+    },
     {
         category: "CENTMED Seminar Series",
         title: "Accelerating Research Commercialization – From Bench to Bank",
