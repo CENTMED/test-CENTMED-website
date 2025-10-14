@@ -6,8 +6,18 @@ import { CalendarDays, Users, University } from "lucide-react";
 import AliAsgarBhagatImage from "../assets/AliAsgarBhagat_image.jpg";
 import SamuelTangImage from "../assets/SamuelTang_image.jpg";
 import QiaoquiangGanImage from "../assets/QiaoqiangGan_image.jpg";
+import DrAdamKhalifa from "../assets/DrAdamKhalifa.jpg";
 
 const eventData = [
+    {
+        category: "CENTMED Seminar Series",
+        title: "Injectable, Wirelessly Powered Implants for Distributed Neural Interfacing within the IoB",
+        speaker: "Dr. Adam Khalifa",
+        date: "Oct 16th, 2025",
+        university: "University of Florida",
+        image: DrAdamKhalifa,
+    },
+    
     {
         category: "CENTMED Seminar Series",
         title: "Accelerating Research Commercialization – From Bench to Bank",
