@@ -68,6 +68,7 @@ const sections = [
 
         ]
     },
+    
     {
         title: "CCAD - CO-INVESTIGATORS",
         displayAsList: false,
@@ -93,6 +94,7 @@ const sections = [
 
         ]
     },
+    
     {
         title: "RESEARCH STAFF", people: [
             {
@@ -163,6 +165,7 @@ const sections = [
             },
         ]
     },
+    
     {
         title: "ADMINISTRATION", people: [
             {
@@ -173,6 +176,7 @@ const sections = [
             }
         ]
     },
+    
     {
         title: "CCAD COLLABORATORS",
         displayAsList: false,
