@@ -23,6 +23,8 @@ import WaelOthmanImage from "../assets/WaelOthman_image.jpg";
 import SajinaLalImage from "../assets/SajinaLal_image.png";
 import CarlosAbrilImage from "../assets/CarlosAbril_image.png";
 import JuanBarajasGamboaImage from "../assets/JuanBarajasGamboa_image.png";
+import Andre from "../assets/Andre_image.jpg";
+import Nurbergen_Aitmukhanbetov from "../assets/Nurbergen_Aitmukhanbetov_image.jpg";
 
 const sections = [
     {
