@@ -25,6 +25,7 @@ import CarlosAbrilImage from "../assets/CarlosAbril_image.png";
 import JuanBarajasGamboaImage from "../assets/JuanBarajasGamboa_image.png";
 import AndreImage from "../assets/Andre_image.jpg";
 import NurbergenAitmukhanbetovImage from "../assets/Nurbergen_Aitmukhanbetov_image.jpg";
+import SanzharKakenovImage from "../assests/SanzharKakenov_Image.jpg";
 
 const sections = [
     {
@@ -162,6 +163,12 @@ const sections = [
                 title: "RESEARCH STAFF",
                 description: "Nurbergen Aitmukhanbetov holds a Bachelor of Science in Mechanical Engineering from New York University Abu Dhabi. He specialized in Computational Fluid Dynamics (CFD), Finite Element Modeling (FEM), and fluid-structure interaction (FSI) simulations, and medical device design. His current research focuses on developing a next-generation glaucoma drainage implant, using computational analysis and experimental verifications to improve fluid control and optimize surgical procedures and postoperative outcomes. Nurbergen’s broader interests also include application of robotics, AI, and Machine Learning toward biomedical technologies.",
                 photo: NurbergenAitmukhanbetovImage
+            },
+            {
+                name: "Sanzhar Kakenov",
+                title: "RESEARCH STAFF",
+                description: "Sanzhar holds a Bachelor of Science in Biology with a specialization in Brain and Cognitive Science from New York University Abu Dhabi. His research primarily focuses on circadian neurobiology, with an emphasis on the mechanisms underlying rhythmic excitability in mammalian clock neurons within the suprachiasmatic nucleus. He has extensive experience with single-cell RNA sequencing, electrophysiology, and stereotaxic surgeries, complemented by a strong background in RNA transcriptomics, population genomics, and primary cell culture, including work with human umbilical mesenchymal stem cells. Sanzhar has presented his research at several scientific meetings, including the CGSB Symposium XIII, and was awarded the Excellent Presentation Award at the Molecular and Cellular Cognition Conference. At CENTMED, he is part of a collaborative project between the Micro- and Nanoscale Bioengineering Lab and the Laboratory of Neural Systems and Behaviour, where he investigates network phenotypes of Alzheimer’s disease and healthy human brain organoids using spatial scRNA-seq and electrophysiology.",
+                photo: SanzharKakenovImage
             },
         ]
     },
