@@ -25,7 +25,7 @@ import CarlosAbrilImage from "../assets/CarlosAbril_image.png";
 import JuanBarajasGamboaImage from "../assets/JuanBarajasGamboa_image.png";
 import AndreImage from "../assets/Andre_image.jpg";
 import NurbergenAitmukhanbetovImage from "../assets/Nurbergen_Aitmukhanbetov_image.jpg";
-import SanzharKakenovImage from "../assets/SanzharKakenov_Image.jpg";
+import SanzharKakenovImage from "../assets/SanzharKakenov_Image.JPG";
 
 const sections = [
     {
