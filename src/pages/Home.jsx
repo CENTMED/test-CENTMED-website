@@ -401,9 +401,6 @@ const Home = () => {
 
             {/* News Section with Carousel */}
             <motion.section
-
-            {/* News Section with Carousel */}
-            <motion.section
                 className="content-section"
                 id="whats-new"
                 viewport={{ once: false, amount: 0.3 }}
