@@ -187,7 +187,7 @@ const MeetingCarousel = () => {
     return (
         <div className="meeting-carousel-container">
             <div className="meeting-carousel-header">
-                <h2 className="block-heading">All-Investigator Meeting Highlights</h2>
+                <h2 className="block-heading">Recent Event Highlights</h2>
                 <p className="block-section-text">
                     Highlights from our recent all-investigator meeting, featuring collaborative discussions, research presentations, and team moments.
                 </p>
