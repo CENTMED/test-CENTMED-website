@@ -559,6 +559,111 @@ body.home-page {
     right: -60px;
 }
 
+/* Meeting Image Carousel Styles */
+.meeting-carousel-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.meeting-carousel-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.meeting-carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 3rem;
+}
+
+.meeting-images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.meeting-image-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    aspect-ratio: 4/3;
+    cursor: pointer;
+}
+
+.meeting-image-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.meeting-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.meeting-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    padding: 1rem;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.meeting-image-card:hover .meeting-image-overlay {
+    opacity: 1;
+}
+
+/* Responsive adjustments for Meeting Carousel */
+@media (max-width: 1024px) {
+    .meeting-images-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .meeting-carousel-content {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .meeting-images-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .meeting-carousel-content {
+        padding: 0 1rem;
+    }
+    
+    .carousel-arrow-left {
+        left: -30px;
+    }
+    
+    .carousel-arrow-right {
+        right: -30px;
+    }
+    
+    .meeting-carousel-container {
+        padding: 1rem 0.5rem;
+    }
+}
+
+
 /* Specific adjustments for responsive design */
 @media (max-width: 768px) {
     .split-svg-container {
