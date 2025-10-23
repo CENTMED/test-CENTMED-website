@@ -14,6 +14,15 @@ import advancedMaterialsInterfacesImage from "../assets/advanced_materials_inter
 import DOHInnovationChallengeImage from "../assets/DOH_innovation_challenge.png"
 import expoOsakaImage from "../assets/expo_osaka_image.jpg";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+// Import your meeting images
+import meeting1 from "../assets/meeting1.jpg";
+import meeting2 from "../assets/meeting2.jpg";
+import meeting3 from "../assets/meeting3.jpg";
+import meeting4 from "../assets/meeting4.jpg";
+import meeting5 from "../assets/meeting5.jpg";
+import meeting6 from "../assets/meeting5.jpg"; //Meeting 6 is repeat of meeting 5
+// Add more as needed
+
 
 
 // Sample news data - replace with your actual data
@@ -47,6 +56,42 @@ const newsItems = [
         link: "https://www.linkedin.com/feed/update/urn:li:activity:7345804567206322177"
     }
 ];
+
+// Meeting images data
+const meetingImages = [
+    {
+        id: 1,
+        image: meeting1,
+        caption: "Opening keynote presentation"
+    },
+    {
+        id: 2,
+        image: meeting2,
+        caption: "Research collaboration session"
+    },
+    {
+        id: 3,
+        image: meeting3,
+        caption: "Poster presentations"
+    },
+    {
+        id: 4,
+        image: meeting4,
+        caption: "Networking reception"
+    },
+    {
+        id: 5,
+        image: meeting5,
+        caption: "Panel discussion"
+    },
+    {
+        id: 6,
+        image: meeting6,
+        caption: "Group photo"
+    }
+    // Add more images as needed
+];
+
 
 // News Carousel Component
 const NewsCarousel = () => {
@@ -117,6 +162,68 @@ const NewsCarousel = () => {
             <div className="block-buttons">
                 <Link to="/news" className="section-button">All News</Link>
                 <Link to="/events" className="section-button">Events</Link>
+            </div>
+        </div>
+    );
+};
+
+// Meeting Image Carousel Component
+const MeetingCarousel = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const imagesPerPage = 6;
+    const maxIndex = Math.max(0, Math.ceil(meetingImages.length / imagesPerPage) - 1);
+
+    const handlePrevious = () => {
+        setCurrentIndex(prevIndex => Math.max(0, prevIndex - 1));
+    };
+
+    const handleNext = () => {
+        setCurrentIndex(prevIndex => Math.min(maxIndex, prevIndex + 1));
+    };
+
+    const startIdx = currentIndex * imagesPerPage;
+    const visibleImages = meetingImages.slice(startIdx, startIdx + imagesPerPage);
+
+    return (
+        <div className="meeting-carousel-container">
+            <div className="meeting-carousel-header">
+                <h2 className="block-heading">All-Investigator Meeting Highlights</h2>
+                <p className="block-section-text">
+                    Highlights from our recent all-investigator meeting, featuring collaborative discussions, research presentations, and team moments.
+                </p>
+            </div>
+
+            <div className="meeting-carousel-content">
+                {currentIndex > 0 && (
+                    <button
+                        className="carousel-arrow carousel-arrow-left"
+                        onClick={handlePrevious}
+                        aria-label="Previous images"
+                    >
+                        <ChevronLeft size={24} />
+                    </button>
+                )}
+
+                <div className="meeting-images-container">
+                    {visibleImages.map(item => (
+                        <div key={item.id} className="meeting-image-card">
+                            <img src={item.image} alt={item.caption} />
+                            <div className="meeting-image-overlay">
+                                {item.caption}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                {currentIndex < maxIndex && (
+                    <button
+                        className="carousel-arrow carousel-arrow-right"
+                        onClick={handleNext}
+                        aria-label="Next images"
+                    >
+                        <ChevronRight size={24} />
+                    </button>
+                )}
             </div>
         </div>
     );
@@ -280,6 +387,20 @@ const Home = () => {
                     </div>
                 </motion.section>
             ))}
+            {/* Meeting Highlights Section */}
+            <motion.section
+                className="content-section"
+                id="meeting-highlights"
+                viewport={{ once: false, amount: 0.3 }}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+                <MeetingCarousel />
+            </motion.section>
+
+            {/* News Section with Carousel */}
+            <motion.section
 
             {/* News Section with Carousel */}
             <motion.section
