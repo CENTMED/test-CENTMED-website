@@ -8,8 +8,8 @@ import DOHInnovationChallengeImage from "../assets/DOH_innovation_challenge.png"
 import expoOsakaImage from "../assets/expo_osaka_image.jpg";
 import KhalilBBCEtH from "../assets/KhalilBBCEtH.png";
 import COPIsAwards from "../assets/CO-PIsAwards.png";
-import WaelIEEEBioCas26 from "src/assets/WaelIEEEBioCas26.jpeg";
-import SongU3B from "src/assets/SongU3B.jpeg";
+import WaelIEEEBioCas26 from "../assets/WaelIEEEBioCas26.jpeg";
+import SongU3B from "../assets/SongU3B.jpeg";
 
 
 // News data - expanded from your home page
