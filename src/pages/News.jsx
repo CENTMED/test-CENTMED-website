@@ -6,8 +6,8 @@ import xpanseLizardImage from "../assets/xpanse_lizards_image.jpg";
 import advancedMaterialsInterfacesImage from "../assets/advanced_materials_interfaces_image.jpg"
 import DOHInnovationChallengeImage from "../assets/DOH_innovation_challenge.png"
 import expoOsakaImage from "../assets/expo_osaka_image.jpg";
-import KhalilBBCEtH from "src/assets/KhalilBBCEtH.png";
-import COPIsAwards from "src/assets/CO-PIsAwards.png";
+import KhalilBBCEtH from "../assets/KhalilBBCEtH.png";
+import COPIsAwards from "../assets/CO-PIsAwards.png";
 import WaelIEEEBioCas26 from "src/assets/WaelIEEEBioCas26.jpeg";
 import SongU3B from "src/assets/SongU3B.jpeg";
 
@@ -54,7 +54,6 @@ const newsItems = [
         excerpt: "CENTMED Co-director Prof. Khalil Ramadi was featured on BBC World Service discussing his groundbreaking work on FLASH, a capsule-sized pill with electrodes that stimulate the gut's neural network. He explained how the gut, known as the 'little brain' with the body's second-largest neural network, can be manipulated through ingestible electronics to potentially treat eating disorders and metabolic diseases. Prof. Ramadi appeared alongside Dr. Thomas Oxley (CEO, Synchron) and Prof. Eleanor Stride (University of Oxford) to discuss the future of engineering in redefining healthcare.",
         category: "Publications"
     },
-
     {
         id: 5,
         title: "CENTMED Student Team Wins Innovation Award",
