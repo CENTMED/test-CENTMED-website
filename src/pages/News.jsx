@@ -8,7 +8,7 @@ import DOHInnovationChallengeImage from "../assets/DOH_innovation_challenge.png"
 import expoOsakaImage from "../assets/expo_osaka_image.jpg";
 import KhalilBBCEtH from "../assets/KhalilBBCEtH.png";
 import COPIsAwards from "../assets/CO-PIsAwards.png";
-import WaelIEEEBioCas26 from "../assets/WaelIEEEBioCas26.jpeg";
+import WaelIEEEBioCas26 from "../assets/EditedWaelIEEEBioCas26.jpeg";
 import SongU3B from "../assets/SongU3B.jpeg";
 
 
@@ -18,7 +18,7 @@ const newsItems = [
         id: 1,
         title: "CENTMED's Professor Song Presents at UAE Biomaterials Conference",
         subtitle: "Rafael (Yong-Ak) Song delivers invited talk on microfluidic innovation for cancer research",
-        date: "October 2025",
+        date: "October 31, 2025",
         image: SongU3B,
         link: "https://www.linkedin.com/posts/centmed_centmed-medicaldevices-researchexcellence-activity-7389910871789019136-mqJ5?utm_source=share&utm_medium=member_desktop&rcm=ACoAADox-OMB4nVfBHLe6FFM76xloIHaWxPEi4M",
         excerpt: "Professor Rafael (Yong-Ak) Song was invited to speak at the 1st UAE Biomaterials, Biofabrication, and Bioengineering Conference (U3B) at Khalifa University on October 24-25, 2025. His presentation, titled 'A Modular and Reconfigurable Microfluidic Device for Culturing Spheroids Under Continuous Perfusion,' showcased an innovative device to grow cancer spheroids under continuous perfusion for drug screening. The invited talk highlighted CENTMED's research excellence on an international platform and provided opportunities for collaboration with bioengineering leaders.",
@@ -28,7 +28,7 @@ const newsItems = [
         id: 2,
         title: "CENTMED Presents LaparoSense at IEEE BioCAS 2025",
         subtitle: "Wael Othman showcases tactile sensing innovation for minimally invasive surgery",
-        date: "October 2025",
+        date: "October 18, 2025",
         image: WaelIEEEBioCas26,
         link: "https://www.linkedin.com/posts/centmed_centmedresearch-ieeebiocas2025-healthtech-activity-7387089760512671744-IhV7?utm_source=share&utm_medium=member_desktop&rcm=ACoAADox-OMB4nVfBHLe6FFM76xloIHaWxPEi4M",
         excerpt: "Wael Othman represented CENTMED at the 21st IEEE Biomedical Circuits and Systems Conference (BioCAS 2025), presenting LaparoSense for Tactile Sensing in Minimally Invasive Surgery through a live demonstration and poster presentation. The session provided valuable opportunities to exchange ideas with global leaders in biomedical circuits and systems.",
@@ -38,7 +38,7 @@ const newsItems = [
         id: 3,
         title: "CENTMED Co-PIs Awarded NYU Discovery Research Fund Grants",
         subtitle: "Prof. Sohmyung Ha and Prof. Khalil Ramadi Receive Funding for Human Health Research",
-        date: "2025-10-29",
+        date: "October 29, 2025",
         image: COPIsAwards,
         link: "https://www.linkedin.com/posts/centmed_centmed-nyuad-research-activity-7362103802742661120-2lDD?utm_source=share&utm_medium=member_desktop&rcm=ACoAADox-OMB4nVfBHLe6FFM76xloIHaWxPEi4M",
         excerpt: "CENTMED Co-PIs Prof. Sohmyung Ha and Prof. Khalil Ramadi have been awarded grants from the NYU Discovery Research Fund for Human Health. Ha received a Planning Award for a wearable closed-loop neuromodulation system for sleep-disorder treatment, while Ramadi was granted an Early Stage research award for ingestible electronic devices targeting gut serotonergic signaling in gut and mood disorders.",
@@ -48,7 +48,7 @@ const newsItems = [
         id: 4,
         title: "Prof. Khalil Ramadi Featured on BBC World Service Live Event",
         subtitle: "The Engineers: Exploring the Human at Royal Geographical Society",
-        date: "October 2025",
+        date: "August 13, 2025",
         image: KhalilBBCEtH,
         link: "https://www.linkedin.com/posts/centmed_the-new-medical-innovations-that-could-change-activity-7363618268642795520-5Ugx?utm_source=share&utm_medium=member_desktop&rcm=ACoAADox-OMB4nVfBHLe6FFM76xloIHaWxPEi4M",
         excerpt: "CENTMED Co-director Prof. Khalil Ramadi was featured on BBC World Service discussing his groundbreaking work on FLASH, a capsule-sized pill with electrodes that stimulate the gut's neural network. He explained how the gut, known as the 'little brain' with the body's second-largest neural network, can be manipulated through ingestible electronics to potentially treat eating disorders and metabolic diseases. Prof. Ramadi appeared alongside Dr. Thomas Oxley (CEO, Synchron) and Prof. Eleanor Stride (University of Oxford) to discuss the future of engineering in redefining healthcare.",
