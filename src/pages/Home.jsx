@@ -32,12 +32,6 @@ import meeting6 from "../assets/meeting5.jpg"; //Meeting 6 is repeat of meeting 
 
 
 // Sample news data - replace with your actual data
-const newsItems = [
-    import KhalilBBCEtH from "../assets/KhalilBBCEtH.png";
-import COPIsAwards from "../assets/CO-PIsAwards.png";
-import WaelIEEEBioCas26 from "../assets/EditedWaelIEEEBioCas26.jpeg";
-import SongU3B from "../assets/SongU3B.jpeg";
-
 
 // News data - expanded from your home page
 const newsItems = [
