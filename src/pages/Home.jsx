@@ -111,6 +111,79 @@ const Home = () => {
         };
     }, []);
 
+// News Carousel Component
+const NewsCarousel = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const maxIndex = Math.max(0, newsItems.length - 3);
+
+    const handlePrevious = () => {
+        setCurrentIndex(prevIndex => Math.max(0, prevIndex - 1));
+    };
+
+    const handleNext = () => {
+        setCurrentIndex(prevIndex => Math.min(maxIndex, prevIndex + 1));
+    };
+
+    const reversedNews = newsItems.slice().reverse();
+    const visibleNews = reversedNews.slice(currentIndex, currentIndex + 3);
+
+
+    return (
+        <div className="news-carousel-container">
+            <div className="news-carousel-header">
+                <h2 className="block-heading">What's New</h2>
+                <p className="block-section-text">
+                    Check out the latest from CENTMED, including research highlights, student projects, and upcoming events.
+                </p>
+            </div>
+
+            <div className="news-carousel-content">
+                {currentIndex > 0 && (
+                    <button
+                        className="carousel-arrow carousel-arrow-left"
+                        onClick={handlePrevious}
+                        aria-label="Previous news"
+                    >
+                        &lt;
+                    </button>
+                )}
+
+                <div className="news-cards-container">
+                    {visibleNews.map(item => (
+                        <div key={item.id} className="news-card">
+                            <img src={item.image} alt={item.title} className="news-card-image" />
+                            <div className="news-card-content">
+                                <h3 className="news-card-title">{item.title}</h3>
+                                <p className="news-card-subtitle">{item.subtitle}</p>
+                                {item.link.startsWith("http") ? (
+                                    <a href={item.link} className="news-card-link" target="_blank" rel="noopener noreferrer">Read more</a>
+                                ) : (
+                                    <Link to={item.link} className="news-card-link">Read more</Link>
+                                )}
+
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                {currentIndex < maxIndex && (
+                    <button
+                        className="carousel-arrow carousel-arrow-right"
+                        onClick={handleNext}
+                        aria-label="Next news"
+                    >
+                        &gt;
+                    </button>
+                )}
+            </div>
+
+            <div className="block-buttons">
+                <Link to="/news" className="section-button">All News</Link>
+                <Link to="/events" className="section-button">Events</Link>
+            </div>
+        </div>
+    );
+};
     const textBlocks = [
         {
             id: 1,
