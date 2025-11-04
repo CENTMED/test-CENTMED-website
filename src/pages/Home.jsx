@@ -37,60 +37,59 @@ import meeting6 from "../assets/meeting5.jpg"; //Meeting 6 is repeat of meeting 
 const newsItems = [
     {
         id: 1,
-        title: "CENTMED's Professor Song Presents at UAE Biomaterials Conference",
-        subtitle: "Rafael (Yong-Ak) Song delivers invited talk on microfluidic innovation for cancer research",
-        image: SongU3B,
-        link: "https://www.linkedin.com/posts/centmed_centmed-medicaldevices-researchexcellence-activity-7389910871789019136-mqJ5?utm_source=share&utm_medium=member_desktop&rcm=ACoAADox-OMB4nVfBHLe6FFM76xloIHaWxPEi4M",
-    },
-    {
-        id: 2,
-        title: "CENTMED Presents LaparoSense at IEEE BioCAS 2025",
-        subtitle: "Wael Othman showcases tactile sensing innovation for minimally invasive surgery",
-        image: WaelIEEEBioCas26,
-        link: "https://www.linkedin.com/posts/centmed_centmedresearch-ieeebiocas2025-healthtech-activity-7387089760512671744-IhV7?utm_source=share&utm_medium=member_desktop&rcm=ACoAADox-OMB4nVfBHLe6FFM76xloIHaWxPEi4M",
-    },
-    {
-        id: 3,
-        title: "CENTMED Co-PIs Awarded NYU Discovery Research Fund Grants",
-        subtitle: "Prof. Sohmyung Ha and Prof. Khalil Ramadi Receive Funding for Human Health Research",
-        image: COPIsAwards,
-        link: "https://www.linkedin.com/posts/centmed_centmed-nyuad-research-activity-7362103802742661120-2lDD?utm_source=share&utm_medium=member_desktop&rcm=ACoAADox-OMB4nVfBHLe6FFM76xloIHaWxPEi4M",
-    },
-    {
-        id: 4,
-        title: "Prof. Khalil Ramadi Featured on BBC World Service Live Event",
-        subtitle: "The Engineers: Exploring the Human at Royal Geographical Society",
-        image: KhalilBBCEtH,
-        link: "https://www.linkedin.com/posts/centmed_the-new-medical-innovations-that-could-change-activity-7363618268642795520-5Ugx?utm_source=share&utm_medium=member_desktop&rcm=ACoAADox-OMB4nVfBHLe6FFM76xloIHaWxPEi4M",
-    },
-
-    {
-        id: 5,
         title: "Publication in Advanced Materials Interfaces",
         subtitle: "Study explores ion concentration polarization using experiments and molecular simulations",
         image: advancedMaterialsInterfacesImage,
         link: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admi.202401018"
     },
     {
-        id: 6,
+        id: 2,
         title: "Brain Organoids + Lizard Tails + Biomimicry",
         subtitle: "Dr. Rafael Song explores brain organoids, bioinspired materials, and the future of translational medicine.",
         image: xpanseLizardImage,
         link: "https://www.xpanse.world/insight/brain-organoids-lizard-tails-biomimicry"
     },
     {
-        id: 7,
+        id: 3,
         title: "CENTMED Student Team Wins Innovation Award",
         subtitle: "NYUAD duo awarded for groundbreaking dementia detection software at DOH innovation challenge.",
         image: DOHInnovationChallengeImage,
         link: "https://nyuad.nyu.edu/en/academics/divisions/engineering/engineering-awards-successes.html"
     },
     {
-        id: 8,
+        id: 4,
         title: "CENTMED Showcases at Expo 2025 Osaka",
         subtitle: "Spotlight on wearable diagnostics and smart surgical tools at the UAE Pavilion",
         image: expoOsakaImage,
         link: "https://www.linkedin.com/feed/update/urn:li:activity:7345804567206322177"
+    },
+    {
+        id: 5,
+        title: "CENTMED's Professor Song Presents at UAE Biomaterials Conference",
+        subtitle: "Rafael (Yong-Ak) Song delivers invited talk on microfluidic innovation for cancer research",
+        image: SongU3B,
+        link: "https://www.linkedin.com/posts/centmed_centmed-medicaldevices-researchexcellence-activity-7389910871789019136-mqJ5?utm_source=share&utm_medium=member_desktop&rcm=ACoAADox-OMB4nVfBHLe6FFM76xloIHaWxPEi4M",
+    },
+    {
+        id: 6,
+        title: "CENTMED Presents LaparoSense at IEEE BioCAS 2025",
+        subtitle: "Wael Othman showcases tactile sensing innovation for minimally invasive surgery",
+        image: WaelIEEEBioCas26,
+        link: "https://www.linkedin.com/posts/centmed_centmedresearch-ieeebiocas2025-healthtech-activity-7387089760512671744-IhV7?utm_source=share&utm_medium=member_desktop&rcm=ACoAADox-OMB4nVfBHLe6FFM76xloIHaWxPEi4M",
+    },
+    {
+        id: 7,
+        title: "CENTMED Co-PIs Awarded NYU Discovery Research Fund Grants",
+        subtitle: "Prof. Sohmyung Ha and Prof. Khalil Ramadi Receive Funding for Human Health Research",
+        image: COPIsAwards,
+        link: "https://www.linkedin.com/posts/centmed_centmed-nyuad-research-activity-7362103802742661120-2lDD?utm_source=share&utm_medium=member_desktop&rcm=ACoAADox-OMB4nVfBHLe6FFM76xloIHaWxPEi4M",
+    },
+    {
+        id: 8,
+        title: "Prof. Khalil Ramadi Featured on BBC World Service Live Event",
+        subtitle: "The Engineers: Exploring the Human at Royal Geographical Society",
+        image: KhalilBBCEtH,
+        link: "https://www.linkedin.com/posts/centmed_the-new-medical-innovations-that-could-change-activity-7363618268642795520-5Ugx?utm_source=share&utm_medium=member_desktop&rcm=ACoAADox-OMB4nVfBHLe6FFM76xloIHaWxPEi4M",
     }
 ];
 
