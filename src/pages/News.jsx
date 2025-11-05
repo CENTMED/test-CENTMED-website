@@ -99,7 +99,7 @@ const newsItems = [
         title: "Modular Microfluidics + Spheroid Culture + Biomimicry",
         subtitle: "Dr. Rafael Song's team unveils breakthrough microfluidic device that revolutionizes 3D cell culture for drug testing and disease modeling.",
         date: "August 13, 2025",
-        image: ,
+        image: advancedMaterialsInterfacesImage,
         link: "https://doi.org/10.1063/5.0262536",
         excerpt: "Prof. Rafael (Yong-Ak) Song and his team at NYU Abu Dhabi have published groundbreaking research in APL Bioengineering on a reconfigurable microfluidic platform that enhances spheroid growth by up to 140%. The device combines reversible sealing with continuous perfusion and optical coherence tomography, offering unprecedented flexibility for pharmaceutical testing and tissue engineering applications.",
         category: "Publications"
@@ -109,7 +109,7 @@ const newsItems = [
         title: "3D-Printed Neural Probes + Optogenetics + Drug Delivery",
         subtitle: "Prof. Sohmyung Ha's team develops multimodal optogenetic neural probe combining light stimulation and fluid injection in a single device.",
         date: "May 15, 2025",
-        image: ,
+        image: advancedMaterialsInterfacesImage,
         link: "https://doi.org/10.1038/s41598-025-13654-4",
         excerpt: "Prof. Sohmyung Ha and his team at New York University present a breakthrough 3D-printed optogenetic neural probe that integrates light delivery and microfluidic drug injection capabilities. By combining a commercially available microfluidic tube with a custom 3D-printed opto-probe, the device offers rapid, customizable assembly for advanced neuroscience research—enabling simultaneous optical stimulation and precise drug or opsin delivery to neural tissue.",
         category: "Publications"
@@ -119,7 +119,7 @@ const newsItems = [
         title: "Wireless Light Pills + Gut-Brain Axis + Neuroengineering",
         subtitle: "Professor Khalil Ramadi pioneers ingestible devices that wirelessly stimulate gut neurons to control hunger and nutrient absorption.",
         date: "September 9, 2025",
-        image: ,
+        image: advancedMaterialsInterfacesImage,
         link: "https://www.thenationalnews.com/health/2025/09/09/abu-dhabi-weight-loss-device/",
         excerpt: "Professor Khalil Ramadi, CENTMED Co-director at NYU Abu Dhabi, unveils a breakthrough ingestible capsule that emits light on-demand to wirelessly activate gut neurons. This battery-free device, fabricated entirely through 3D printing, represents a significant step toward non-invasive treatments for neuro-metabolic disorders, with potential applications in controlling appetite and treating digestive conditions.",
         category: "Publications"
@@ -129,7 +129,7 @@ const newsItems = [
         title: "Ion Concentration Polarization in Nanofluidic Hydrogels",
         subtitle: "Professor Rafael Song's team combines experiments and molecular dynamics simulations to advance nanofluidic membrane technology.",
         date: "May 5, 2025",
-        image: ,
+        image: advancedMaterialsInterfacesImage,
         link: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admi.202401018",
         excerpt: "Professor Rafael (Yong-Ak) Song's research team achieved a remarkable milestone with their work featured on the inside front cover of Advanced Materials Interfaces. Their study, 'Investigating the Mechanism of Ion Concentration Polarization within Nanofluidic Hydrogel Membranes: Experiment and Simulation,' combines experimental techniques with molecular dynamics simulations to explore the fundamental mechanisms driving ion transport in nanofluidic systems. This interdisciplinary approach advances the understanding of nanofluidic hydrogel membranes, with potential applications in biomedical devices, energy conversion, and advanced filtration technologies.",
         category: "Publications"
@@ -139,7 +139,7 @@ const newsItems = [
         title: "CORAL: Passive Intestinal Microbiome Sampling Device",
         subtitle: "CENTMED's ingestible capsule with tortuous lattices enables targeted gut microbiome sampling for disease research.",
         date: "November 5, 2025",
-        image: ,
+        image: advancedMaterialsInterfacesImage,
         link: "https://lnkd.in/dmBMmjhg",
         excerpt: "CENTMED presents CORAL, a passive ingestible capsule published in Device (Cell Press) that enables targeted sampling of the gastrointestinal tract. Led by Dr. Hanan Mohammed and Principal Investigator Prof. Khalil Ramadi, in collaboration with the Center for Genomics and Systems Biology's Aashish Jha and team, this technology provides a more accurate and comprehensive view of gut microbial communities, opening new avenues for studying gut health, disease mechanisms, and potential therapeutics.",
         category: "Publications"
