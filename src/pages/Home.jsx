@@ -155,7 +155,7 @@ const newsItems = [
     }
 ];
 
-// Image Carousel Component (add this before the Home component)
+// Image Carousel Component
 const ImageCarousel = ({ images }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [selectedImage, setSelectedImage] = useState(null);
@@ -169,11 +169,11 @@ const ImageCarousel = ({ images }) => {
         setCurrentIndex(prevIndex => Math.min(maxIndex, prevIndex + 1));
     };
 
-    const openModal = (image) => {
+    const handleImageClick = (image) => {
         setSelectedImage(image);
     };
 
-    const closeModal = () => {
+    const handleCloseModal = () => {
         setSelectedImage(null);
     };
 
@@ -182,35 +182,25 @@ const ImageCarousel = ({ images }) => {
     return (
         <>
             <div className="image-carousel-container">
-                <div className="image-carousel-content">
-                    <h2 className="block-heading">Event Highlights</h2>
-                <p className="block-section-text">
-                    Check out the highlights from the latest CENTMED events, including research highlights, student projects, and conferences.
-                </p>
-            </div>
-
+                <div className="image-carousel-wrapper">
                     {currentIndex > 0 && (
                         <button
                             className="image-carousel-arrow image-carousel-arrow-left"
                             onClick={handlePrevious}
                             aria-label="Previous images"
                         >
-                            &lt;
+                            ‹
                         </button>
                     )}
 
                     <div className="carousel-images-container">
-                        {visibleImages.map((image, index) => (
+                        {visibleImages.map(image => (
                             <div 
-                                key={currentIndex + index} 
-                                className="carousel-image-wrapper"
-                                onClick={() => openModal(image)}
+                                key={image.id} 
+                                className="carousel-image-item"
+                                onClick={() => handleImageClick(image)}
                             >
-                                <img 
-                                    src={image.src} 
-                                    alt={image.alt} 
-                                    className="carousel-image" 
-                                />
+                                <img src={image.src} alt={image.alt} />
                             </div>
                         ))}
                     </div>
@@ -221,7 +211,7 @@ const ImageCarousel = ({ images }) => {
                             onClick={handleNext}
                             aria-label="Next images"
                         >
-                            &gt;
+                            ›
                         </button>
                     )}
                 </div>
@@ -231,27 +221,23 @@ const ImageCarousel = ({ images }) => {
             {selectedImage && (
                 <div 
                     className="image-modal-overlay" 
-                    onClick={closeModal}
+                    onClick={handleCloseModal}
                 >
                     <div 
                         className="image-modal-content"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <button 
-                            className="image-modal-close" 
-                            onClick={closeModal}
-                            aria-label="Close image"
+                            className="image-modal-close"
+                            onClick={handleCloseModal}
+                            aria-label="Close modal"
                         >
                             ×
                         </button>
-                        <img 
-                            src={selectedImage.src} 
-                            alt={selectedImage.alt} 
-                            className="image-modal-image" 
-                        />
+                        <img src={selectedImage.src} alt={selectedImage.alt} />
                     </div>
                 </div>
-            )
+            )}
         </>
     );
 };
