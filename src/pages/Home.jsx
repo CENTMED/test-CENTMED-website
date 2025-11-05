@@ -482,6 +482,17 @@ const NewsCarousel = () => {
                     </div>
                 </motion.section>
             ))}
+            {/* Image Carousel - placed after "Who We Are" section */}
+            <motion.section
+                className="content-section"
+                viewport={{ once: false, amount: 0.3 }}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+                <ImageCarousel images={carouselImages} />
+            </motion.section>
+
             {/* News Section with Carousel */}
             <motion.section
                 className="content-section"
