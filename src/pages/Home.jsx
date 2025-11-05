@@ -480,9 +480,7 @@ const NewsCarousel = () => {
                             </>
                         )}
                     </div>
-                </motion.section>
-            ))}
-            {/* Image Carousel - placed after "Who We Are" section */}
+                    {/* Image Carousel - placed after "Who We Are" section */}
                 <motion.section
                     className="content-section"
                     id="image-carousel"
@@ -493,7 +491,7 @@ const NewsCarousel = () => {
                 >
                     <ImageCarousel images={carouselImages} />
                 </motion.section>
-            </div>
+            ))}
             {/* News Section with Carousel */}
             <motion.section
                 className="content-section"
