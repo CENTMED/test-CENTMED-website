@@ -155,7 +155,7 @@ const newsItems = [
     }
 ];
 
-// Image Carousel Component
+// Image Carousel Component (add this before the Home component)
 const ImageCarousel = ({ images }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [selectedImage, setSelectedImage] = useState(null);
@@ -169,11 +169,11 @@ const ImageCarousel = ({ images }) => {
         setCurrentIndex(prevIndex => Math.min(maxIndex, prevIndex + 1));
     };
 
-    const handleImageClick = (image) => {
+    const openModal = (image) => {
         setSelectedImage(image);
     };
 
-    const handleCloseModal = () => {
+    const closeModal = () => {
         setSelectedImage(null);
     };
 
@@ -182,25 +182,29 @@ const ImageCarousel = ({ images }) => {
     return (
         <>
             <div className="image-carousel-container">
-                <div className="image-carousel-wrapper">
+                <div className="image-carousel-content">
                     {currentIndex > 0 && (
                         <button
                             className="image-carousel-arrow image-carousel-arrow-left"
                             onClick={handlePrevious}
                             aria-label="Previous images"
                         >
-                            ‹
+                            &lt;
                         </button>
                     )}
 
                     <div className="carousel-images-container">
-                        {visibleImages.map(image => (
+                        {visibleImages.map((image, index) => (
                             <div 
-                                key={image.id} 
-                                className="carousel-image-item"
-                                onClick={() => handleImageClick(image)}
+                                key={currentIndex + index} 
+                                className="carousel-image-wrapper"
+                                onClick={() => openModal(image)}
                             >
-                                <img src={image.src} alt={image.alt} />
+                                <img 
+                                    src={image.src} 
+                                    alt={image.alt} 
+                                    className="carousel-image" 
+                                />
                             </div>
                         ))}
                     </div>
@@ -211,7 +215,7 @@ const ImageCarousel = ({ images }) => {
                             onClick={handleNext}
                             aria-label="Next images"
                         >
-                            ›
+                            &gt;
                         </button>
                     )}
                 </div>
@@ -221,20 +225,24 @@ const ImageCarousel = ({ images }) => {
             {selectedImage && (
                 <div 
                     className="image-modal-overlay" 
-                    onClick={handleCloseModal}
+                    onClick={closeModal}
                 >
                     <div 
                         className="image-modal-content"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <button 
-                            className="image-modal-close"
-                            onClick={handleCloseModal}
-                            aria-label="Close modal"
+                            className="image-modal-close" 
+                            onClick={closeModal}
+                            aria-label="Close image"
                         >
                             ×
                         </button>
-                        <img src={selectedImage.src} alt={selectedImage.alt} />
+                        <img 
+                            src={selectedImage.src} 
+                            alt={selectedImage.alt} 
+                            className="image-modal-image" 
+                        />
                     </div>
                 </div>
             )}
