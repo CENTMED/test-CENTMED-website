@@ -212,7 +212,7 @@ const ImageCarousel = ({ images }) => {
                                     className="carousel-image" 
                                 />
                             </div>
-                        )}
+                        ))}
                     </div>
 
                     {currentIndex < maxIndex && (
@@ -251,7 +251,7 @@ const ImageCarousel = ({ images }) => {
                         />
                     </div>
                 </div>
-            }
+            )
         </>
     );
 };
@@ -329,7 +329,7 @@ const NewsCarousel = () => {
                             </div>
                         </div>
                     ))}
-                </div>
+                </div>                
 
                 {currentIndex < maxIndex && (
                     <button
