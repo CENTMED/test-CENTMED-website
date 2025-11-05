@@ -183,6 +183,12 @@ const ImageCarousel = ({ images }) => {
         <>
             <div className="image-carousel-container">
                 <div className="image-carousel-content">
+                    <h2 className="block-heading">Recent Events</h2>
+                <p className="block-section-text">
+                    Check out the highlights from the latest CENTMED events, including research highlights, student projects, and conferences.
+                </p>
+            </div>
+
                     {currentIndex > 0 && (
                         <button
                             className="image-carousel-arrow image-carousel-arrow-left"
@@ -482,7 +488,7 @@ const NewsCarousel = () => {
                     </div>
                 </motion.section>
             ))}
-            {/* Image Carousel - placed after "Who We Are" section */}
+            {/* Image Carousel */}
             <motion.section
                 className="content-section"
                 viewport={{ once: false, amount: 0.3 }}
