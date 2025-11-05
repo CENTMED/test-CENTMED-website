@@ -132,6 +132,93 @@ const newsItems = [
     }
 ];
 
+// Image Carousel Component
+const ImageCarousel = ({ images }) => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [selectedImage, setSelectedImage] = useState(null);
+    const maxIndex = Math.max(0, images.length - 3);
+
+    const handlePrevious = () => {
+        setCurrentIndex(prevIndex => Math.max(0, prevIndex - 1));
+    };
+
+    const handleNext = () => {
+        setCurrentIndex(prevIndex => Math.min(maxIndex, prevIndex + 1));
+    };
+
+    const handleImageClick = (image) => {
+        setSelectedImage(image);
+    };
+
+    const handleCloseModal = () => {
+        setSelectedImage(null);
+    };
+
+    const visibleImages = images.slice(currentIndex, currentIndex + 3);
+
+    return (
+        <>
+            <div className="image-carousel-container">
+                <div className="image-carousel-wrapper">
+                    {currentIndex > 0 && (
+                        <button
+                            className="image-carousel-arrow image-carousel-arrow-left"
+                            onClick={handlePrevious}
+                            aria-label="Previous images"
+                        >
+                            ‹
+                        </button>
+                    )}
+
+                    <div className="carousel-images-container">
+                        {visibleImages.map(image => (
+                            <div 
+                                key={image.id} 
+                                className="carousel-image-item"
+                                onClick={() => handleImageClick(image)}
+                            >
+                                <img src={image.src} alt={image.alt} />
+                            </div>
+                        ))}
+                    </div>
+
+                    {currentIndex < maxIndex && (
+                        <button
+                            className="image-carousel-arrow image-carousel-arrow-right"
+                            onClick={handleNext}
+                            aria-label="Next images"
+                        >
+                            ›
+                        </button>
+                    )}
+                </div>
+            </div>
+
+            {/* Modal for enlarged image */}
+            {selectedImage && (
+                <div 
+                    className="image-modal-overlay" 
+                    onClick={handleCloseModal}
+                >
+                    <div 
+                        className="image-modal-content"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <button 
+                            className="image-modal-close"
+                            onClick={handleCloseModal}
+                            aria-label="Close modal"
+                        >
+                            ×
+                        </button>
+                        <img src={selectedImage.src} alt={selectedImage.alt} />
+                    </div>
+                </div>
+            )}
+        </>
+    );
+};
+
 const Home = () => {
     const ecgRef = useRef(null);
 
@@ -151,6 +238,7 @@ const Home = () => {
         };
     }, []);
 
+    
 // News Carousel Component
 const NewsCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -361,6 +449,16 @@ const NewsCarousel = () => {
                             </>
                         )}
                     </div>
+                    {/* Add Image Carousel below "Who We Are" section */}
+                    {block.showCarousel && (
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+                        >
+                            <ImageCarousel images={meeting1, meeting2, meeting3, meeting4, meeting5, meeting6} />
+                        </motion.div>
+                    )}
                 </motion.section>
             ))}
             {/* News Section with Carousel */}
