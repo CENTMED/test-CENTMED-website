@@ -183,7 +183,7 @@ const ImageCarousel = ({ images }) => {
         <>
             <div className="image-carousel-container">
                 <div className="image-carousel-content">
-                    <h2 className="block-heading">Recent Events</h2>
+                    <h2 className="block-heading">Event Highlights</h2>
                 <p className="block-section-text">
                     Check out the highlights from the latest CENTMED events, including research highlights, student projects, and conferences.
                 </p>
@@ -212,7 +212,7 @@ const ImageCarousel = ({ images }) => {
                                     className="carousel-image" 
                                 />
                             </div>
-                        ))}
+                        )}
                     </div>
 
                     {currentIndex < maxIndex && (
@@ -251,7 +251,7 @@ const ImageCarousel = ({ images }) => {
                         />
                     </div>
                 </div>
-            )}
+            }
         </>
     );
 };
@@ -491,6 +491,7 @@ const NewsCarousel = () => {
             {/* Image Carousel */}
             <motion.section
                 className="content-section"
+                id="event-highlight"
                 viewport={{ once: false, amount: 0.3 }}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
