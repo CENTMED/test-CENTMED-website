@@ -33,10 +33,33 @@ import meeting4 from "../assets/meeting4.jpg";
 import meeting5 from "../assets/meeting5.jpg";
 import meeting6 from "../assets/meeting5.jpg"; //Meeting 6 is repeat of meeting 5
 // Add more as needed
-
-
-
-// Sample news data - replace with your actual data
+// Sample images data - replace with your actual images
+const carouselImages = [
+    {
+        src: meeting1,
+        alt: "Team photo 1"
+    },
+    {
+        src: meeting2,
+        alt: "Research lab"
+    },
+    {
+        src: meeting3,
+        alt: "Research project"
+    },
+    {
+        src: meeting4,
+        alt: "Lab equipment"
+    },
+    {
+        src: meeting5,
+        alt: "Team event"
+    },
+    {
+        src: meeting6,
+        alt: "Conference presentation"
+    }
+];
 
 const newsItems = [
     {
@@ -131,6 +154,101 @@ const newsItems = [
         link: "https://lnkd.in/dmBMmjhg",
     }
 ];
+
+// Image Carousel Component (add this before the Home component)
+const ImageCarousel = ({ images }) => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [selectedImage, setSelectedImage] = useState(null);
+    const maxIndex = Math.max(0, images.length - 3);
+
+    const handlePrevious = () => {
+        setCurrentIndex(prevIndex => Math.max(0, prevIndex - 1));
+    };
+
+    const handleNext = () => {
+        setCurrentIndex(prevIndex => Math.min(maxIndex, prevIndex + 1));
+    };
+
+    const openModal = (image) => {
+        setSelectedImage(image);
+    };
+
+    const closeModal = () => {
+        setSelectedImage(null);
+    };
+
+    const visibleImages = images.slice(currentIndex, currentIndex + 3);
+
+    return (
+        <>
+            <div className="image-carousel-container">
+                <div className="image-carousel-content">
+                    {currentIndex > 0 && (
+                        <button
+                            className="image-carousel-arrow image-carousel-arrow-left"
+                            onClick={handlePrevious}
+                            aria-label="Previous images"
+                        >
+                            &lt;
+                        </button>
+                    )}
+
+                    <div className="carousel-images-container">
+                        {visibleImages.map((image, index) => (
+                            <div 
+                                key={currentIndex + index} 
+                                className="carousel-image-wrapper"
+                                onClick={() => openModal(image)}
+                            >
+                                <img 
+                                    src={image.src} 
+                                    alt={image.alt} 
+                                    className="carousel-image" 
+                                />
+                            </div>
+                        ))}
+                    </div>
+
+                    {currentIndex < maxIndex && (
+                        <button
+                            className="image-carousel-arrow image-carousel-arrow-right"
+                            onClick={handleNext}
+                            aria-label="Next images"
+                        >
+                            &gt;
+                        </button>
+                    )}
+                </div>
+            </div>
+
+            {/* Modal for enlarged image */}
+            {selectedImage && (
+                <div 
+                    className="image-modal-overlay" 
+                    onClick={closeModal}
+                >
+                    <div 
+                        className="image-modal-content"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <button 
+                            className="image-modal-close" 
+                            onClick={closeModal}
+                            aria-label="Close image"
+                        >
+                            ×
+                        </button>
+                        <img 
+                            src={selectedImage.src} 
+                            alt={selectedImage.alt} 
+                            className="image-modal-image" 
+                        />
+                    </div>
+                </div>
+            )}
+        </>
+    );
+};
 
 const Home = () => {
     const ecgRef = useRef(null);
@@ -364,6 +482,18 @@ const NewsCarousel = () => {
                     </div>
                 </motion.section>
             ))}
+            {/* Image Carousel - placed after "Who We Are" section */}
+                <motion.section
+                    className="content-section"
+                    id="image-carousel"
+                    viewport={{ once: false, amount: 0.3 }}
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                >
+                    <ImageCarousel images={carouselImages} />
+                </motion.section>
+            </div>
             {/* News Section with Carousel */}
             <motion.section
                 className="content-section"
