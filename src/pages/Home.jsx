@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import BeatingHeart from "../components/BeatingHeart";
 import ResearchIcon from "../components/ResearchIcon";
-import TeamIcon from "../components/Group Photo_CENTMED_20Oct2025.jpg";
+import TeamIcon from "../components/TeamIcon";
 import NewsIcon from "../components/NewsIcon";
 import SectionNavigator from "../components/SectionNavigator";
 import researchImage from "../assets/centmed_research_areas.png";
-import groupPhoto from "../assets/GroupPhoto.jpg";
+import groupPhoto from "../assets/Group Photo_CENTMED_20Oct2025.jpg";
 import xpanseLizardImage from "../assets/xpanse_lizards_image.jpg";
 import advancedMaterialsInterfacesImage from "../assets/advanced_materials_interfaces_image.jpg"
 import DOHInnovationChallengeImage from "../assets/DOH_innovation_challenge.png"
