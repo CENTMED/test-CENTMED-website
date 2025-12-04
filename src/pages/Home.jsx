@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import BeatingHeart from "../components/BeatingHeart";
 import ResearchIcon from "../components/ResearchIcon";
-import TeamIcon from "../components/TeamIcon";
+import TeamIcon from "../components/Group Photo_CENTMED_20Oct2025.jpg";
 import NewsIcon from "../components/NewsIcon";
 import SectionNavigator from "../components/SectionNavigator";
 import researchImage from "../assets/centmed_research_areas.png";
