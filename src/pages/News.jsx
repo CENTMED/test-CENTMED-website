@@ -15,11 +15,11 @@ import IonGel from "../assets/IonPolarNanofluidHydrogel.jpg";
 import ModFluid from "../assets/ModularReconfigMicroFludicDevice.jpeg";
 import OptoProbe from "../assets/OptoNeuralProbe.png";
 import PillNational from "../assets/WeightLossPillNational.jpeg";
-import A3DprintedFlourbasedHeater from "../assets/A 3D-printed Flour-based Heater.jpg";
+import A3DprintedFlourbasedHeater from "src/assets/A3DprintedFlourbasedHeater.jpg";
 import AsynchronousQuadraturePhase from "../assets/Asynchronous Quadrature-Phase.jpeg";
-import AnUltraLowPower_AmplifierLess from "../assets/An Ultra-Low-Power Amplifier-Less.jpeg";
-import Automatic_Sleep_Stage_Classification from "../assets/Automatic Sleep Stage Classification.png";
-import A3Dprintedoptogeneticdevice from "../assets/3D-printed optogenetic device.jpg";
+import AnUltraLowPowerAmplifierLess from "../assets/AnUltraLowPowerAmplifierLess.jpeg";
+import AutomaticSleepStageClassification from "../assets/AutomaticSleepStageClassification.png";
+import A3Dprintedoptogeneticdevice from "../assets/A3Dprintedoptogeneticdevice.jpg";
 
 
 // News data - expanded from your home page
@@ -182,7 +182,7 @@ const newsItems = [
         image: AnUltraLowPower_AmplifierLess,
         link: "https://doi.org/10.1109/TBCAS.2025.3527652",
         excerpt: "Featured in IEEE Transactions on Biomedical Circuits and Systems, this paper by Muhammad Abrar Akram, Aida Aberra, Soon-Jae Kweon, and Prof. Sohmyung Ha introduces an ultra-low-power potentiostat IC that eliminates traditional amplifiers through a digital regulation loop, paving the way for compact and energy-efficient biosensors.",
-        category: "Conference"
+        category: "Publication"
     },
     {
         id: 17,
@@ -199,7 +199,7 @@ const newsItems = [
         title: "Sleep Stage Classification with CNN-Transformer-combined Structure Using Single-Channel Raw ECG",
         subtitle: "A CNN-Transformer hybrid model for accurate sleep stage classification using raw single-channel ECG inputs.",
         date: "July 14-17, 2025",
-        image: Automatic_Sleep_Stage_Classification,
+        image: AutomaticSleepStageClassification,
         link: "",
         excerpt: "Presented at the 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) 2025, Copenhagen, this paper by Moogyeom Kim, Seokjae Lee, Sohmyung Ha, Soon-Jae Kweon, and Minji Lee proposes a CNN-Transformer-based deep learning model for efficient sleep stage classification using single-channel ECG data, offering improved accuracy and reduced preprocessing complexity.",
         category: "Conference"
