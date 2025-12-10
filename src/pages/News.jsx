@@ -21,7 +21,6 @@ import AnUltraLowPowerAmplifierLess from "../assets/AnUltraLowPowerAmplifierLess
 import AutomaticSleepStageClassification from "../assets/AutomaticSleepStageClassification.png";
 import A3Dprintedoptogeneticdevice from "../assets/A3Dprintedoptogeneticdevice.jpg";
 
-
 // News data - expanded from your home page
 const newsItems = [
     {
