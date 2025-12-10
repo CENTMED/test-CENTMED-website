@@ -270,6 +270,8 @@ body.home-page {
 }
 
 
+
+
 /* Add these styles to your Home.css file */
 
 /* Landing Wrapper Styles - New container with rounded border */
@@ -286,170 +288,6 @@ body.home-page {
     position: relative;
     height: 82vh;
     /* Fixed height to ensure it's contained */
-}
-
-/* Image Carousel Styles */
-.image-carousel-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 3rem auto;
-    padding: 0 1rem;
-}
-
-.image-carousel-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 0 60px;
-}
-
-.carousel-images-container {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    width: 100%;
-    overflow: hidden;
-}
-
-.carousel-image-wrapper {
-    flex: 0 0 calc(33.333% - 1rem);
-    max-width: 350px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.carousel-image-wrapper:hover {
-    transform: scale(1.05);
-}
-
-.carousel-image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    display: block;
-}
-
-.image-carousel-arrow {
-    background: var(--teal);
-    color: white;
-    border: none;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3rem;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-}
-
-.image-carousel-arrow:hover {
-    background-color: var(--purple);
-}
-
-.image-carousel-arrow-left {
-    left: 0;
-}
-
-.image-carousel-arrow-right {
-    right: 0;
-}
-
-/* Modal/Lightbox Styles */
-.image-modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    cursor: pointer;
-}
-
-.image-modal-content {
-    position: relative;
-    max-width: 90vw;
-    max-height: 90vh;
-    cursor: default;
-}
-
-.image-modal-image {
-    max-width: 100%;
-    max-height: 90vh;
-    object-fit: contain;
-    border-radius: 10px;
-}
-
-.image-modal-close {
-    position: absolute;
-    top: -40px;
-    right: 0;
-    background: var(--teal);
-    color: white;
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-}
-
-.image-modal-close:hover {
-    background-color: var(--purple);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .image-carousel-content {
-        padding: 0 50px;
-    }
-
-    .carousel-images-container {
-        gap: 1rem;
-    }
-
-    .carousel-image-wrapper {
-        flex: 0 0 calc(50% - 0.5rem);
-        max-width: none;
-    }
-
-    .carousel-image {
-        height: 200px;
-    }
-
-    .image-carousel-arrow {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .carousel-image-wrapper {
-        flex: 0 0 100%;
-    }
-
-    .image-carousel-content {
-        padding: 0 45px;
-    }
 }
 
 
@@ -721,111 +559,6 @@ body.home-page {
     right: -60px;
 }
 
-/* Meeting Image Carousel Styles */
-.meeting-carousel-container {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-}
-
-.meeting-carousel-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.meeting-carousel-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 0 3rem;
-}
-
-.meeting-images-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.meeting-image-card {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    aspect-ratio: 4/3;
-    cursor: pointer;
-}
-
-.meeting-image-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.meeting-image-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.meeting-image-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-    padding: 1rem;
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 500;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.meeting-image-card:hover .meeting-image-overlay {
-    opacity: 1;
-}
-
-/* Responsive adjustments for Meeting Carousel */
-@media (max-width: 1024px) {
-    .meeting-images-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-    }
-    
-    .meeting-carousel-content {
-        padding: 0 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .meeting-images-container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
-    .meeting-carousel-content {
-        padding: 0 1rem;
-    }
-    
-    .carousel-arrow-left {
-        left: -30px;
-    }
-    
-    .carousel-arrow-right {
-        right: -30px;
-    }
-    
-    .meeting-carousel-container {
-        padding: 1rem 0.5rem;
-    }
-}
-
-
 /* Specific adjustments for responsive design */
 @media (max-width: 768px) {
     .split-svg-container {
@@ -847,7 +580,7 @@ body.home-page {
 
 
     .landing-section {
-        height: 150vh;
+        height: 130vh;
     }
 
     .title-container {
