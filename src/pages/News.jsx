@@ -15,11 +15,11 @@ import IonGel from "../assets/IonPolarNanofluidHydrogel.jpg";
 import ModFluid from "../assets/ModularReconfigMicroFludicDevice.jpeg";
 import OptoProbe from "../assets/OptoNeuralProbe.png";
 import PillNational from "../assets/WeightLossPillNational.jpeg";
-import A3DprintedFlourbasedHeater from "../assets/A_3D-printed_Flour-based_Heater.jpeg";
-import AsynchronousQuadraturePhase from "../assets/Asynchronous_Quadrature-Phase.jpeg";
-import AnUltraLowPower_AmplifierLess from "../assets/An_Ultra-Low-Power_Amplifier-Less.jpeg";
-import Automatic_Sleep_Stage_Classification from "../assets/Automatic_Sleep_Stage_Classification.png";
-import A3Dprintedoptogeneticdevice from "../assets/3D-printed_optogenetic_device.jpg";
+import A3DprintedFlourbasedHeater from "src/assets/A 3D-printed Flour-based Heater.jpg";
+import AsynchronousQuadraturePhase from "../assets/Asynchronous Quadrature-Phase.jpeg";
+import AnUltraLowPower_AmplifierLess from "../assets/An Ultra-Low-Power Amplifier-Less.jpeg";
+import Automatic_Sleep_Stage_Classification from "../assets/Automatic Sleep Stage Classification.png";
+import A3Dprintedoptogeneticdevice from "../assets/3D-printed optogenetic device.jpg";
 
 
 // News data - expanded from your home page
