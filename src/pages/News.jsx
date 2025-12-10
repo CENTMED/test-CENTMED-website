@@ -15,7 +15,7 @@ import IonGel from "../assets/IonPolarNanofluidHydrogel.jpg";
 import ModFluid from "../assets/ModularReconfigMicroFludicDevice.jpeg";
 import OptoProbe from "../assets/OptoNeuralProbe.png";
 import PillNational from "../assets/WeightLossPillNational.jpeg";
-import A3DprintedFlourbasedHeater from "src/assets/A 3D-printed Flour-based Heater.jpg";
+import A3DprintedFlourbasedHeater from "../assets/A 3D-printed Flour-based Heater.jpg";
 import AsynchronousQuadraturePhase from "../assets/Asynchronous Quadrature-Phase.jpeg";
 import AnUltraLowPower_AmplifierLess from "../assets/An Ultra-Low-Power Amplifier-Less.jpeg";
 import Automatic_Sleep_Stage_Classification from "../assets/Automatic Sleep Stage Classification.png";
